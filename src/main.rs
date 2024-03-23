@@ -34,7 +34,6 @@ impl Database {
         }
     }
 
-    // TODO CRUD DATA 
     fn insert (&mut self, task: Task) {
         self.tasks.insert(task.id, task);
     }
@@ -53,8 +52,6 @@ impl Database {
     fn update (&mut self, task: Task) {
         self.tasks.insert(task.id, task);
     }
-
-    //USER DATA RELATED FUNCTIONS
 
     fn insert_user (&mut self, user: User) {
         self.users.insert(user.id, user);
